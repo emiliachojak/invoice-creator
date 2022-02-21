@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Creator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fad81697bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Invoice creator</h1>
+        <p class="description">Thanks for choosing GoodCorp, LLC!</p>
+      </header>
+      <main>
+        <div class="buttons-container">
+          <button class="job-button" id="wash-car-btn">Wash Car: $10</button>
+          <button class="job-button" id="mow-lawn-btn">Mow Lawn: $20</button>
+          <button class="job-button" id="pull-weeds-btn">
+            Pull Weeds: $30
+          </button>
+        </div>
+
+        <div class="invoice-headers-container">
+          <p class="invoice-header">TASK</p>
+          <p class="invoice-header">TOTAL</p>
+        </div>
+
+        <div class="invoice-list-container">
+          <div id="invoice-list-items-container"></div>
+
+          <div id="invoice-list-prices-container"></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="summary-headers-container">
+          <p class="summary-header">NOTES</p>
+          <p class="summary-header">TOTAL AMOUNT</p>
+        </div>
+
+        <div class="summary-container">
+          <p id="summary-note"></p>
+          <p id="total-amount">$0</p>
+        </div>
+
+        <button id="send-invoice-btn">
+          <i class="fa-solid fa-envelope"></i>Send invoice
+        </button>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

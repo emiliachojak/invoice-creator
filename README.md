@@ -1,2 +1,1 @@
 # invoice-creator
-Invoice Creator
